@@ -1,0 +1,19 @@
+./qwrf - quick web resource fetcher
+
+Send requests to servers.  Automatic domain name resolutions.
+
+Supported request types:
+        HTTP/http
+                Usage: ./qwrf [HOST] [PORT] [REQUEST TYPE]
+                Example: ./qwrf www.example.com 80 http
+                Common ports: 80, 8080
+        HTTPS/https
+                Usage: ./qwrf [HOST] [PORT] [REQUEST TYPE]
+                Example: ./qwrf httpbin.org 443 https
+                Common ports: 443, 4443, 8443
+
+
+
+Dependencies: linux, updatedb, grep, vi/vim, g++, libssl-dev/openssl-devel, dpdk-devel
+
+Run: 'bash compile'
