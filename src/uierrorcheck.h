@@ -24,7 +24,6 @@ public:
                          "being >= v3.0.x.\n";
             exit(0);
         }
-        // dpdk checking will go here
         // End checking dependencies.
         if (argc == 2 && strcmp(argv[1], "-h") == 0) {
             std::cout

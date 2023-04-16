@@ -1,6 +1,5 @@
 #include "config.h"
 #include "requestobjects.h"
-#include "specialrequestobjects.h"
 #include "uierrorcheck.h"
 
 int main(int argc, char** argv) {

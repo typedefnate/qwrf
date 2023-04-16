@@ -14,6 +14,6 @@ Supported request types:
 
 
 
-Dependencies: linux, updatedb, grep, vi/vim, g++, libssl-dev/openssl-devel, dpdk-devel
+Dependencies: linux, updatedb, grep, vi/vim, g++, libssl-dev/openssl-devel, clang-format
 
 Run: 'bash compile'
