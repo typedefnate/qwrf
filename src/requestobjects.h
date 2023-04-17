@@ -83,9 +83,6 @@ public:
         exit(0);
     }
     virtual ~Request() {}
-
-protected:
-    //"specialrequestobjects.h" tend to inherit from here.
 };
 
 class HTTP_Request : public Request {
