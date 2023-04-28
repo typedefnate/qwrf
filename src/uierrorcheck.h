@@ -7,24 +7,6 @@ public:
     UI_Error_Check(int arg_c, char** arg_v) {
         argc = arg_c;
         argv = arg_v;
-        // Start checking Dependencies.
-        if (system("locate grep >> /dev/null") != 0) {
-            std::cout << "Install grep." << std::endl;
-            exit(0);
-        }
-        if (system("locate vi grep $vi >> /dev/null") != 0 &&
-            system("locate vim grep $vim >> /dev/null") != 0) {
-            std::cout << "Install vi or vim on your machine." << std::endl;
-            exit(0);
-        }
-        if (system("locate openssl-devel >> /dev/null") != 0 &&
-            system("locate libssl-dev >> /dev/null") != 0) {
-            std::cout << "Install libssl-dev(debian) or openssl-devel(redhat)."
-                      << "\nTyping 'openssl version' should return the library "
-                         "being >= v3.0.x.\n";
-            exit(0);
-        }
-        // End checking dependencies.
         if (argc == 2 && strcmp(argv[1], "-h") == 0) {
             std::cout
                 << argv[0]
