@@ -1,6 +1,6 @@
 #!bin/bash
 
-clang-format -i -style=file ./src/*.h ./src/*.cpp 
+#clang-format -i -style=file ./src/*.h ./src/*.cpp 
 
 # debug # g++ -std=c++23 -lcrypto -lssl -lcrypto -Wall -g -O0 -o qwrfdebugbuild ./src/*.cpp ./src/*.h 
 
